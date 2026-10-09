@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Varanda do Atlantico logo">
-  <circle cx="256" cy="256" r="240" fill="#e8f4fb" stroke="#1c6b93" stroke-width="16"/>
-  <path d="M56 300c40-18 80-18 120 0s80 18 120 0 80-18 120 0 56 12 80 0" fill="none" stroke="#2f8fbd" stroke-width="14" stroke-linecap="round"/>
-  <path d="M72 340c36-16 72-16 108 0s72 16 108 0 72-16 108 0 48 10 68 0" fill="none" stroke="#1c6b93" stroke-width="10" stroke-linecap="round"/>
-  <rect x="148" y="168" width="216" height="96" rx="8" fill="none" stroke="#1c6b93" stroke-width="12"/>
-  <path d="M148 232h216" stroke="#1c6b93" stroke-width="10"/>
-  <path d="M188 168v96M256 168v96M324 168v96" stroke="#1c6b93" stroke-width="8"/>
-  <text x="256" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#1c6b93">VARANDA DO ATLANTICO</text>
-</svg>

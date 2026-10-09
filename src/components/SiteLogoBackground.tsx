@@ -3,15 +3,14 @@ import Image from "next/image";
 export function SiteLogoBackground() {
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-0 flex items-center justify-center"
+      className="pointer-events-none flex items-center justify-center"
       aria-hidden="true"
     >
       <Image
-        src="/logo.svg"
-        alt=""
-        width={720}
-        height={720}
-        className="h-auto w-[min(72vw,36rem)] opacity-20"
+        src="/logo.png"
+        alt="Varanda do Atlantico Logo"
+        width={50}
+        height={50}
         priority
       />
     </div>

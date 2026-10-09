@@ -10,27 +10,36 @@ export function PhotoCarousel() {
   const lastPhotoIndex = apartmentPhotos.length - 1;
 
   function showPreviousPhoto() {
-    setCurrentPhotoIndex((photoIndex) => (photoIndex === 0 ? lastPhotoIndex : photoIndex - 1));
+    setCurrentPhotoIndex((photoIndex) =>
+      photoIndex === 0 ? lastPhotoIndex : photoIndex - 1,
+    );
   }
 
   function showNextPhoto() {
-    setCurrentPhotoIndex((photoIndex) => (photoIndex === lastPhotoIndex ? 0 : photoIndex + 1));
+    setCurrentPhotoIndex((photoIndex) =>
+      photoIndex === lastPhotoIndex ? 0 : photoIndex + 1,
+    );
   }
 
   return (
-    <section className="mx-auto w-full max-w-5xl px-4 py-6" aria-label="Apartment photos">
-      <figure className="relative overflow-hidden rounded-lg bg-white/85 shadow">
-        <p className="absolute top-0 left-0 right-0 z-10 bg-slate-900/75 px-4 py-3 text-sm text-white">
+    <section
+      className="mx-auto w-full max-w-5xl px-4 py-6"
+      aria-label="Apartment photos"
+    >
+      <figure className="overflow-hidden rounded-lg bg-white/85 shadow">
+        <p className="bg-slate-900/75 px-4 py-3 text-sm text-white">
           {currentPhoto.description}
         </p>
+
         <Image
           src={currentPhoto.imagePath}
           alt={currentPhoto.description}
           width={1600}
           height={1066}
-          className="h-[min(28rem,58vh)] w-full object-cover"
+          className="block h-auto max-h-[58vh] w-full object-contain"
           priority
         />
+
         <figcaption className="sr-only">{currentPhoto.description}</figcaption>
       </figure>
 
