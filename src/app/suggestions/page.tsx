@@ -5,7 +5,7 @@ import { madeiraSuggestions } from "@/data/madeiraSuggestions";
 export default function SuggestionsPage() {
   return (
     <ContentPanel>
-      <PageHeading title="Things to do on Madeira" />
+      <PageHeading title="Coisas para fazer na Madeira" />
       <ul className="space-y-6">
         {madeiraSuggestions.map((madeiraSuggestion) => (
           <li key={madeiraSuggestion.title}>
@@ -13,6 +13,15 @@ export default function SuggestionsPage() {
               {madeiraSuggestion.title}
             </h2>
             <p className="text-slate-800">{madeiraSuggestion.description}</p>
+
+            <a
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+              href={madeiraSuggestion.source.link}
+              target="_blank"
+            >
+              {madeiraSuggestion.source.label}
+            </a>
           </li>
         ))}
       </ul>
