@@ -7,20 +7,18 @@ export default function UtilitiesPage() {
     <ContentPanel>
       <PageHeading title="Nearby places" />
       <ul className="space-y-8">
-        {localUtilities.map((localUtilityCategory) => (
-          <li key={localUtilityCategory.categoryName}>
-            <h2 className="mb-3 text-lg font-semibold text-slate-900">
-              {localUtilityCategory.categoryName}
-            </h2>
-            <ul className="space-y-3">
-              {localUtilityCategory.places.map((localPlace) => (
-                <li key={localPlace.name}>
-                  <p className="font-medium text-slate-900">{localPlace.name}</p>
-                  <p className="text-slate-800">{localPlace.details}</p>
-                </li>
-              ))}
-            </ul>
-          </li>
+        {localUtilities.map((utility) => (
+          <a
+            key={`${utility.category}-${utility.name}`}
+            href={utility.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-lg border border-slate-200 p-4 transition hover:bg-slate-50"
+          >
+            <h3 className="font-semibold text-slate-900">{utility.name}</h3>
+            <p className="text-sm text-slate-500">{utility.location}</p>
+            <p className="mt-2 text-sm text-slate-700">{utility.description}</p>
+          </a>
         ))}
       </ul>
     </ContentPanel>

@@ -1,62 +1,124 @@
-export type LocalPlace = {
+export type UtilityCategory =
+  | "cafe"
+  | "restaurant"
+  | "gym"
+  | "supermarket"
+  | "petrol";
+
+export interface LocalUtility {
   name: string;
-  details: string;
-};
+  category: UtilityCategory;
+  location: string;
+  description: string;
+  url: string;
+}
 
-export type LocalUtilityCategory = {
-  categoryName: string;
-  places: LocalPlace[];
-};
+export const localUtilities: LocalUtility[] = [
+  // Cafés
+  {
+    name: "Miminho",
+    category: "cafe",
+    location: "Ribeira Brava",
+    description: "Bakery, pastries and coffee.",
+    url: "https://www.miminho.eu/",
+  },
+  {
+    name: "Flor do Vale",
+    category: "cafe",
+    location: "Ribeira Brava",
+    description: "Bakery, pastry shop and café.",
+    url: "https://www.flordovale.pt/",
+  },
+  {
+    name: "Sun Spot Cafe",
+    category: "cafe",
+    location: "Ponta do Sol",
+    description: "Café and restaurant by the sea.",
+    url: "https://pontadosolsunspotcafe.com/",
+  },
+  {
+    name: "Café Xavier",
+    category: "cafe",
+    location: "Ponta do Sol",
+    description: "Traditional local café.",
+    url: "https://www.google.com/maps/search/?api=1&query=Cafe+Xavier+Ponta+do+Sol",
+  },
 
-export const localUtilities: LocalUtilityCategory[] = [
+  // Restaurants
   {
-    categoryName: "Bars",
-    places: [
-      { name: "Barreirinha Bar Cafe", details: "Seafront bar in Funchal old town. Open late on weekends." },
-      { name: "Vox", details: "Small cocktail bar near the marina. Reservations help on Friday nights." },
-    ],
+    name: "Estação 8",
+    category: "restaurant",
+    location: "Ponta do Sol",
+    description: "Local restaurant.",
+    url: "https://www.google.com/maps/search/?api=1&query=Estacao+8+Ponta+do+Sol+Madeira",
   },
   {
-    categoryName: "Restaurants",
-    places: [
-      { name: "Armazem do Sal", details: "Portuguese dishes in a stone warehouse near the Funchal waterfront." },
-      { name: "Restaurante do Forte", details: "Seafood with a view from Sao Tiago fortress." },
-      { name: "O Regional", details: "Simple Madeiran plates such as espada and bolo do caco." },
-    ],
+    name: "Pizzaria Sol Doce",
+    category: "restaurant",
+    location: "Ponta do Sol",
+    description: "Pizza, pasta and pastries.",
+    url: "https://www.facebook.com/Pastelaria-Pizzaria-Sol-Doce-2067999886824691/",
   },
   {
-    categoryName: "Supermarkets",
-    places: [
-      { name: "Pingo Doce", details: "Everyday groceries, fruit, and bakery. Several shops around Funchal and Canico." },
-      { name: "Continente", details: "Larger supermarket for household items and a wider food range." },
-    ],
+    name: "Sabor Italiano",
+    category: "restaurant",
+    location: "Ponta do Sol",
+    description: "Italian restaurant.",
+    url: "https://www.google.com/maps/search/?api=1&query=Sabor+Italiano+Ponta+do+Sol",
   },
   {
-    categoryName: "Hairdressers",
-    places: [
-      { name: "Salon Madeira", details: "Walk-in cuts in central Funchal. Call ahead on Saturdays." },
-      { name: "Studio Cabelo Canico", details: "Local salon close to Canico. English spoken." },
-    ],
+    name: "Restaurante Sol Poente",
+    category: "restaurant",
+    location: "Ponta do Sol",
+    description: "Restaurant by the seafront.",
+    url: "https://www.google.com/maps/search/?api=1&query=Restaurante+Sol+Poente+Ponta+do+Sol",
+  },
+
+  // Gym
+  {
+    name: "Alex Sampaio Fitness Center",
+    category: "gym",
+    location: "Ponta do Sol",
+    description: "Local fitness centre and gym.",
+    url: "https://www.google.com/maps/search/?api=1&query=Alex+Sampaio+Fitness+Center+Ponta+do+Sol",
+  },
+
+  // Supermarkets
+  {
+    name: "Amanhecer Ponta do Sol",
+    category: "supermarket",
+    location: "Ponta do Sol",
+    description: "Local supermarket for groceries and everyday essentials.",
+    url: "https://www.google.com/maps/search/?api=1&query=Amanhecer+Ponta+do+Sol",
   },
   {
-    categoryName: "Petrol stations",
-    places: [
-      { name: "Galp", details: "Fuel, air, and a small shop on the main road toward Funchal." },
-      { name: "Repsol", details: "24-hour pumps on the ER101. Pay at the night window after 22:00." },
-    ],
+    name: "Amanhecer na Colina",
+    category: "supermarket",
+    location: "Canhas",
+    description: "Local supermarket.",
+    url: "https://www.google.com/maps/search/?api=1&query=Amanhecer+na+Colina+Canhas",
+  },
+
+  // Petrol stations
+  {
+    name: "Repsol",
+    category: "petrol",
+    location: "Ribeira Brava",
+    description: "Fuel station and convenience shop.",
+    url: "https://www.repsol.pt/localizador-estacoes-de-servico/ribeira-brava/sitio-da-murteira/",
   },
   {
-    categoryName: "Cafes",
-    places: [
-      { name: "Cafe Relogio", details: "Coffee and pastel de nata in Funchal centre." },
-      { name: "Mercearia da Poncha", details: "Daytime cafe with poncha later in the afternoon." },
-    ],
+    name: "Galp",
+    category: "petrol",
+    location: "Canhas",
+    description: "Fuel station.",
+    url: "https://www.google.com/maps/search/?api=1&query=Galp+Canhas+Madeira",
   },
   {
-    categoryName: "Bakeries",
-    places: [
-      { name: "Padaria da Ponte", details: "Fresh bread from 07:00. Bolo do caco sells out before lunch." },
-      { name: "A Ponte Nova", details: "Pastries, sandwiches, and simple cakes for the beach." },
-    ],
+    name: "Serrão",
+    category: "petrol",
+    location: "Madeira",
+    description: "Fuel station.",
+    url: "https://serrao.pt/",
   },
 ];
