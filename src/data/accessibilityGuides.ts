@@ -7,17 +7,15 @@ export const accessibilityGuides: AccessibilityGuide[] = [
   {
     title: "Internet (Wi-Fi)",
     steps: [
-      "Open the Wi-Fi settings on your phone, tablet, or laptop.",
-      "Select the network named Varanda-Guest.",
-      "Enter the password printed on the card next to the router.",
-      "If the connection fails, restart the router using the round button on the back, wait one minute, and try again.",
+      "Select the network named MEO-AED160_EXT.",
+      "Enter the password: familiacosta",
     ],
   },
   {
     title: "Television",
     steps: [
       "Press the power button on the Samsung remote.",
-      "Use the source button if the screen stays black, then choose HDMI 1.",
+      "Use the Source button if the screen stays black, then choose HDMI 1.",
       "Change channels with the number keys or the channel up and down buttons.",
       "To use streaming apps, press Home on the remote and choose the app you need.",
     ],
@@ -25,26 +23,27 @@ export const accessibilityGuides: AccessibilityGuide[] = [
   {
     title: "Oven",
     steps: [
-      "Turn the left knob to the heat mode you need (top heat, bottom heat, or fan).",
-      "Turn the right knob to the temperature, usually 180 degrees Celsius for most dishes.",
-      "Wait until the orange light turns off before putting food inside.",
-      "After cooking, turn both knobs back to zero and leave the door slightly open to release heat.",
+      "Turn the left knob to select the cooking mode you need.",
+      "Turn the right knob to set the temperature. 180°C is suitable for most dishes.",
+      "Wait for the oven to reach the selected temperature before putting food inside.",
+      "After cooking, turn both knobs back to zero.",
     ],
   },
   {
-    title: "Hob",
+    title: "Induction hob",
     steps: [
-      "Place the pan on the circle that matches the pan size.",
-      "Turn the matching knob clockwise to start the heat.",
-      "Keep the knob on a low or medium setting for slower cooking.",
-      "Turn the knob back to zero when you finish. The glass stays hot for a few minutes.",
+      "Place a suitable induction pan on the cooking zone you want to use.",
+      "Press the power button to turn on the hob.",
+      "Select the cooking zone and use the + or − buttons to set the heat level.",
+      "When you finish cooking, set the heat level to zero and turn off the hob.",
+      "The glass surface may remain hot after cooking. Do not touch it until the hot-surface indicator turns off.",
     ],
   },
   {
     title: "Washing machine",
     steps: [
-      "Load clothes without packing the drum tightly.",
-      "Pour detergent into the left compartment of the drawer.",
+      "Load the clothes without packing the drum too tightly.",
+      "Pour detergent into the detergent drawer.",
       "Select Cotton 40 for everyday clothes or Mix 30 for a quicker wash.",
       "Press Start and wait for the door lock light to turn off before opening.",
     ],
@@ -52,10 +51,12 @@ export const accessibilityGuides: AccessibilityGuide[] = [
   {
     title: "Coffee machine",
     steps: [
-      "Fill the water tank at the back if it is below the minimum line.",
-      "Add ground coffee or a pod, depending on the holder you use.",
-      "Place a cup under the spout and press the small-cup or large-cup button.",
-      "Empty the used grounds into the kitchen bin after each use.",
+      "Fill the water tank if the water level is below the minimum mark.",
+      "Turn on the coffee machine and wait until it is ready.",
+      "Insert one coffee capsule into the capsule holder.",
+      "Place a cup under the coffee outlet.",
+      "Press the button for the coffee size you want.",
+      "When the coffee is ready, remove the used capsule and place it in the bin.",
     ],
   },
 ];
