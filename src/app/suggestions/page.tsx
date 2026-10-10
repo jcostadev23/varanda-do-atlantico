@@ -5,7 +5,7 @@ import { madeiraSuggestions } from "@/data/madeiraSuggestions";
 export default function SuggestionsPage() {
   return (
     <ContentPanel>
-      <PageHeading title="Coisas para fazer na Madeira" />
+      <PageHeading title="Things to do in Madeira" />
       <ul className="space-y-6">
         {madeiraSuggestions.map((madeiraSuggestion) => (
           <li key={madeiraSuggestion.title}>

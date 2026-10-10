@@ -5,12 +5,7 @@ import { importantInformation } from "@/data/importantInformation";
 export default function ImportantInformationPage() {
   return (
     <ContentPanel>
-      <PageHeading title="How to use the apartment" />
-      <p className="font-bold mb-2">
-        A few useful things to know to help you enjoy Madeira safely and make
-        the most of your stay.
-      </p>
-
+      <PageHeading title="Useful information for a safe and enjoyable stay." />
       <ul className="space-y-6">
         {importantInformation.map((section) => (
           <div>
