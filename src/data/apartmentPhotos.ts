@@ -18,12 +18,12 @@ export const apartmentPhotos: ApartmentPhoto[] = [
   {
     fileName: "main-bedroom.jpg",
     imagePath: "/photos/main-bedroom.jpg",
-    description: "Main bedroom with sky view window and blackout curtains.",
+    description: "Main bedroom with sky-view window and blackout curtains.",
   },
   {
     fileName: "sing-bedroom.jpg",
     imagePath: "/photos/sing-bedroom.jpg",
-    description: "Single bedroom with sky view window and blackout curtains.",
+    description: "Single bedroom with sky-view window and blackout curtains.",
   },
   {
     fileName: "kitchen-entrance.jpg",

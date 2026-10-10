@@ -8,4 +8,5 @@ export const navigationLinks: NavigationLink[] = [
   { href: "/accessibility", label: "Accessibility" },
   { href: "/suggestions", label: "Suggestions" },
   { href: "/utilities", label: "Utilities" },
+  { href: "/important-information", label: "Important Information" },
 ];

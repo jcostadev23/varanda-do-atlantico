@@ -74,10 +74,11 @@ export function PhotoCarousel() {
       <div className="mt-4 flex items-center justify-between gap-4">
         <button
           type="button"
+          aria-label="Previous photo"
           onClick={showPreviousPhoto}
           className="rounded border border-slate-400 bg-white/90 px-4 py-2 text-sm font-medium text-slate-900"
         >
-          Previous photo
+          Previous
         </button>
 
         <p className="text-sm text-slate-800">
@@ -86,10 +87,11 @@ export function PhotoCarousel() {
 
         <button
           type="button"
+          aria-label="Next photo"
           onClick={showNextPhoto}
           className="rounded border border-slate-400 bg-white/90 px-4 py-2 text-sm font-medium text-slate-900"
         >
-          Next photo
+          Next
         </button>
       </div>
     </section>

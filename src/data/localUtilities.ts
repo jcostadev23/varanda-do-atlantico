@@ -14,7 +14,6 @@ export interface LocalUtility {
 }
 
 export const localUtilities: LocalUtility[] = [
-  // Cafés
   {
     name: "Miminho",
     category: "cafe",
@@ -23,11 +22,11 @@ export const localUtilities: LocalUtility[] = [
     url: "https://www.miminho.eu/",
   },
   {
-    name: "Flor do Vale",
+    name: "A Confeitaria",
     category: "cafe",
     location: "Ribeira Brava",
     description: "Bakery, pastry shop and café.",
-    url: "https://www.flordovale.pt/",
+    url: "https://maps.app.goo.gl/B8sFcd66cS79ETUT6",
   },
   {
     name: "Sun Spot Cafe",
