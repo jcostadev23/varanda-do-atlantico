@@ -59,4 +59,12 @@ export const accessibilityGuides: AccessibilityGuide[] = [
       "When the coffee is ready, remove the used capsule and place it in the bin.",
     ],
   },
+  {
+    title: "Smoking",
+    steps: [
+      "Smoking is allowed outside the apartment.",
+      "Please keep the front door closed while smoking to prevent smoke from entering the apartment.",
+      "A cigarette ashtray is provided. Please use it for cigarette ends and ashes.",
+    ],
+  },
 ];
