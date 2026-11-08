@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SITE_NAME } from "@/constants/site";
+import "@flaticon/flaticon-uicons/css/regular/rounded.css";
+import "@flaticon/flaticon-uicons/css/regular/rounded.css";
+import "@flaticon/flaticon-uicons/css/brands/all.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,7 +20,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: SITE_NAME,
-  description: "Guest information for the Varanda do Atlantico apartment on Madeira.",
+  description:
+    "Guest information for the Varanda do Atlantico apartment on Madeira.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -14,14 +14,24 @@ export function SiteHeader() {
           </div>
         </Link>
         <nav aria-label="Main">
-          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-slate-800">
+          <ul className="flex flex-wrap items-center md:justify-center justify-between gap-x-2 gap-y-2 text-sm font-semibold text-teal">
             {navigationLinks.map((navigationLink) => (
               <li key={navigationLink.href}>
                 <Link
                   href={navigationLink.href}
-                  className="underline-offset-4 hover:underline"
+                  aria-label={navigationLink.label}
+                  title={navigationLink.label}
+                  className="inline-flex items-center gap-2 hover:text-teal-500"
                 >
-                  {navigationLink.label}
+                  <i
+                    className={navigationLink.icon}
+                    aria-hidden="true"
+                    style={{ fontSize: "22px", lineHeight: 1 }}
+                  />
+
+                  <span className="hidden sm:inline">
+                    {navigationLink.label}
+                  </span>
                 </Link>
               </li>
             ))}
