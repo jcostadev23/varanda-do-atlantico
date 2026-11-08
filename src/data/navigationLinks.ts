@@ -9,4 +9,5 @@ export const navigationLinks: NavigationLink[] = [
   { href: "/suggestions", label: "Suggestions" },
   { href: "/utilities", label: "Utilities" },
   { href: "/useful-information", label: "Useful information" },
+  { href: "/instagram", label: "Instagram" },
 ];
