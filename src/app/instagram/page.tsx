@@ -30,11 +30,11 @@ export default function InstagramPage() {
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-lg bg-[#BA9D71] px-5 py-3 font-semibold text-white transition hover:bg-[#a88b62]"
+          className="rounded-2xl border bg-coral border-white px-4 py-2 text-sm font-medium text-white min-w-40"
         >
-          Open {INSTAGRAM_HANDLE} on Instagram
+          {INSTAGRAM_HANDLE}
         </a>
-        <ul className="space-y-6">
+        <ul className="space-y-6 mt-6">
           {instagramPrompts.map((prompt) => (
             <li key={prompt.title}>
               <h2 className="mb-1 text-lg font-semibold text-slate-900">

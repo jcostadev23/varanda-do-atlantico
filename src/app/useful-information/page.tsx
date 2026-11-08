@@ -9,7 +9,7 @@ export default function ImportantInformationPage() {
       <ul className="space-y-6">
         {importantInformation.map((section) => (
           <div>
-            <li key={section.title}>
+            <li key={section.title} className="mb-6">
               <h2 className="mb-2 text-lg font-semibold text-slate-900">
                 {section.title}
               </h2>
@@ -24,7 +24,7 @@ export default function ImportantInformationPage() {
                 href={section.source.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 underline hover:text-blue-800"
+                className="rounded-2xl border bg-coral border-white px-4 py-2 text-sm font-medium text-white min-w-40"
               >
                 {section.source.label}
               </a>
