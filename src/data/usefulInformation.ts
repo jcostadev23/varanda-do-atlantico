@@ -1,4 +1,4 @@
-export type InformationSection = {
+export type UsefulionSection = {
   title: string;
   description: string;
   tips: string[];
@@ -8,7 +8,7 @@ export type InformationSection = {
   };
 };
 
-export const importantInformation: InformationSection[] = [
+export const UsefulInformation: UsefulionSection[] = [
   {
     title: "Hiking and Levadas",
     description:

@@ -1,13 +1,14 @@
 import { ContentPanel } from "@/components/ContentPanel";
 import { PageHeading } from "@/components/PageHeading";
-import { importantInformation } from "@/data/importantInformation";
+import { UsefulInformation } from "@/data/usefulInformation";
 
-export default function ImportantInformationPage() {
+export default function UsefulInformationPage() {
+  console.log("Estou aki dentro");
   return (
     <ContentPanel>
       <PageHeading title="Useful information for a safe and enjoyable stay." />
       <ul className="space-y-6">
-        {importantInformation.map((section) => (
+        {UsefulInformation.map((section) => (
           <div>
             <li key={section.title} className="mb-6">
               <h2 className="mb-2 text-lg font-semibold text-slate-900">
