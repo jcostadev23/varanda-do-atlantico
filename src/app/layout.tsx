@@ -4,7 +4,6 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SITE_NAME } from "@/constants/site";
 import "@flaticon/flaticon-uicons/css/regular/rounded.css";
-import "@flaticon/flaticon-uicons/css/regular/rounded.css";
 import "@flaticon/flaticon-uicons/css/brands/all.css";
 import "./globals.css";
 
